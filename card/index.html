@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        margin: 50px auto;
+        background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9f7_OAKpkgKIB9ES5quTJpkyBTXO63dM6ygrew1Sd0SsUC94b);
+        border-radius: 12px;
+        background-position: center;
+        height: 300px;
+        width: 200px;
+        position: relative;
+      }
+      button {
+        background-color: rgb(58, 220, 22);
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 12px;
+      }
+      body {
+        color: white;
+      }
+      .info {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        padding: 150px 20px 10px 20px;
+        font-size: 16px;
+        transition: all 300ms;
+      }
+      .card:hover .info {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="info">
+        <div class="heading">
+          <h2>road</h2>
+        </div>
+        <div class="para">
+          <p>
+            First published in 1869, Nature is the world's leading
+            multidisciplinary science journal.
+          </p>
+        </div>
+        <button>Load More</button>
+      </div>
+    </div>
+  </body>
+</html>

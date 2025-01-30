@@ -2,39 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .container {
-        height: 600px;
-        width: 200px;
-        margin: 50px auto;
+      form {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      .input {
+        margin: 10px;
+      }
+
+      fieldset {
+        max-width: 400px;
+      }
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 12px;
+        color: blue;
+        font-weight: 600;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <form>
-        <h2>user personal information</h2>
-        <label for="">Enter your full name:</label>
-        <input type="text" placeholder="enter your full name" required />
-        <label for="">Enter your Email:</label>
-        <input type="text" placeholder="enter your email" required />
-        <label for="">Enter your password:</label>
-        <input type="number" placeholder="enter your password" required />
-        <label for="">conform your password:</label>
-        <input type="number" placeholder="conform your password" required />
-        <label for="">gender:</label>
+    <form action="">
+      <fieldset>
+        <legend>User Personal information</legend>
+        <div class="input some">
+          <label for="name">Enter full name</label>
+          <input
+            type="text"
+            name=""
+            id="name"
+            placeholder="Ex. jinal desai"
+            required
+            maxlength="30"
+          />
+        </div>
 
-        <input type="text" radio="" placeholder="male" />
-        <input type="text" radio="" placeholder="female" />
-        <input type="text" radio="" placeholder="other" />
-        <label for="">enter your date of birth</label>
-        <input type="date" placeholder="enter yout birth date" required />
-        <label for="">enter your Address</label>
-        <input type="text" placeholder="enter yout birth date" required />
+        <div class="input">
+          <label for="email"> enter your Email </label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="Ex. jinal.desai@gmail.com"
+            required
+            minlength="3"
+            maxlength="30"
+          />
+        </div>
+        <div class="input">
+          <label for="phone">Enter your password</label>
+          <input
+            type="number"
+            name=""
+            id="phone"
+            placeholder="enter password"
+            pattern="[0-9]{10}"
+          />
+        </div>
+        <div class="input">
+          <label for="phone">conform your password</label>
+          <input
+            type="number"
+            name=""
+            id="phone"
+            placeholder="conform your password"
+            pattern="[0-9]{10}"
+          />
+        </div>
+        <div class="input">
+          <label for="">Gender: </label>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" required />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" required />
+          <label for="female">other</label>
+          <input type="radio" name="gender" id="other" required />
+        </div>
+        <div class="input">
+          <label for="dob">Date of Birth</label>
+          <input type="date" name="" id="dob" required />
+        </div>
+        <div class="input">
+          <label for="name">Enter your address</label>
+          <input
+            type="text"
+            name=""
+            id="address"
+            placeholder="enter your address"
+            required
+            maxlength="30"
+          />
+        </div>
         <button>submit</button>
-      </form>
-    </div>
+      </fieldset>
+    </form>
   </body>
 </html>
